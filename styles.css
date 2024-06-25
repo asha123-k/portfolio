@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.logo {
+  height: 200px; /* Adjusted height for better proportion */
+  width: auto; /* Automatically adjust width based on height */
+  padding: 20px;
+}
+
+.hero {
+  position: relative; /* Corrected position value */
+  height: 100vh; /* Corrected height value */
+  display: flex;
+  background-image: url(https://wallup.net/wp-content/uploads/2015/12/112185-sky-nature-landscape-Adobe_Photoshop.jpg);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+ weight:100vh ;
+}
+
+nav {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  margin: 40px;
+}
+
+nav ul li a:hover {
+  color: rgb(233, 24, 24);
+}
+
+.detail {
+  margin-top: 5%;
+}
+
+.detail h1 {
+  font-size: 50px;
+  color: #212121;
+}
+
+.detail span {
+  color: orange;
+}
+
+.detail p {
+  color: #555;
+  line-height: 22px;
+  max-width: 600px; /* Added for better readability */
+  margin: 20px auto; /* Centered and added margin */
+}
+
+.detail a {
+  background: #212121;
+  padding: 15px 25px; /* Adjusted padding for better appearance */
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.images {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+}
+
+.images img {
+  height: 400px;
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  transition: bottom 1s, right 1s; /* Added transition for smooth movement */
+}
+
+.images:hover img {
+  bottom: 0;
+  right: -50px;
+}
